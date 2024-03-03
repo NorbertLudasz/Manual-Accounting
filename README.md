@@ -6,7 +6,7 @@ Given 4 sellers, each generates a given number of tickets they sold and counts p
 
 # Technical information
 The seller making a mistake is randomly determined with a threadsafe method.<br/>
-All actions are performed both sequentially and using parallel programming, making use of threads created using OpenMP in C. The critical directive provided by the library allows for the safe modification of specific data. The time it took for the program to execute sequentially and in parallel is noted down, and used to calculate acceleration and efficiency.
+All actions are performed both sequentially and using parallel programming, making use of threads created using OpenMP in C. The critical directive provided by the library allows for the safe modification of specific data. The time it took for the program to execute sequentially and in parallel is noted down, and used to calculate acceleration and efficiency.<br/>
 All memory used by arrays is allocated dynamically and freed at the end of the program.<br/>
 
 Tested on Linux ( Ubuntu WSL 2.0 )<br/>
