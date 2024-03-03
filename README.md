@@ -9,7 +9,7 @@ The seller making a mistake is randomly determined with a threadsafe method.<br/
 All actions are performed both sequentially and using parallel programming, making use of threads created using OpenMP in C. The critical directive provided by the library allows for the safe modification of specific data. The time it took for the program to execute sequentially and in parallel is noted down, and used to calculate acceleration and efficiency.<br/>
 All memory used by arrays is allocated dynamically and freed at the end of the program.<br/>
 
-Tested on Linux ( Ubuntu WSL 2.0 )<br/>
+Tested on Linux ( Ubuntu WSL 2.0 ), written in the UNIX vi editor<br/>
 Compile with: ~gcc manualAccounting.c -Wall -fopenmp -o executableName<br/>
 Run with: ./executableName nr where nr is an integer specifying the number of tickets sold by each seller<br/>
 Output: profit of each seller on screen, types of tickets sold in "x_kassza" files, where x is the ID of the seller, overall profit in "bevetel" file, boss's calculations, acceleration and efficiency on screen<br/>
